@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #000;
+    background-image: url('https://img.freepik.com/foto-gratis/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28313.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 40px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: rgb(255, 187, 0);
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background-color: orange;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale.2;
+}
+
+.action_btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgb(255, 255, 255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    /* Otras propiedades CSS aquí */
+    position: absolute;
+    top: 50%;
+    right: 50px; /* Ajusta el valor del margen derecho según sea necesario */
+    transform: translateY(-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+.fa {
+    /* Otras propiedades CSS aquí */
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* Otras propiedades CSS aquí */
+}
+
+
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+form:hover,
+form:valid{
+    width: 200px;
+    cursor: pointer;
+}
+
+form:hover input,
+form:valid input{
+    display: block;
+}
+
+form:hover .fa,
+form:valid .fa{
+    background: #07051a;
+    color: white;
+}
+
+
+@media(max-width: 992px){
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media(max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+
+    }
+}
+/* Estilos base del botón */
+.login-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efecto de cambio de color al pasar el ratón */
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Efecto de sombra al hacer clic */
+  .login-button:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilo de botón para pantallas más pequeñas */
+  @media screen and (max-width: 600px) {
+    .login-button {
+      padding: 10px 20px;
+      border-radius: 20px;
+    }
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    position: relative; /* Añade esta propiedad para posicionar correctamente el menú desplegable */
+}
+
+.welcome-message {
+    color: #ffffff; /* Color azul (puedes ajustar el color según tu preferencia) */
+    margin-right: 10px; /* Espacio entre el mensaje de bienvenida y el nombre del cliente */
+}
+
+.user-name {
+    font-size: 27px; /* Tamaño de fuente más grande */
+    color: #005e94; /* Color naranja (puedes ajustar el color según tu preferencia) */
+}
+
+.logout-button {
+    color: #ffffff; /* Color naranja (puedes ajustar el color según tu preferencia) */
+    text-decoration: none;
+    margin-left: 10px; /* Espacio entre el nombre del cliente y el enlace de cerrar sesión */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 5px;
+    border-radius: 5px;
+    top: 35px; /* Ajusta esta propiedad según tu diseño */
+    left: 40px; /* Ajusta esta propiedad si necesitas alinear el menú */
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.user-info:hover .dropdown-content {
+    display: block;
+}
+#cart-count {
+    color: white; /* Establece el color del texto en blanco */
+}

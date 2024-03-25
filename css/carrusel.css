@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slider-container {
+    margin-top: 50px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: 700px;
+    position: relative;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  
+  .slide img {
+    width: 100%; /* Opcional: ajusta el ancho de la imagen automáticamente */
+    height: 700px; /* Ajusta la altura de la imagen al 100% del contenedor */
+  }
+  
+  
+  .prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+  

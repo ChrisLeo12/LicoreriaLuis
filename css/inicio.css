@@ -1,0 +1,253 @@
+.promo-grid {
+    width: 80%;
+    margin: 0 auto; /* Esto centrará el elemento horizontalmente */
+}
+h2{
+    margin-top: 40px;
+    color: white;
+}
+.promo-grid {
+    width: 80%;
+    margin: 0 auto;
+}
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.product {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 20px;
+    scroll-snap-align: start;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+.product-card {
+    margin-top: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 200px; /* Ajusta el ancho según sea necesario */
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-name {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: #a9ac09;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #000000;
+}
+
+#lema{
+    margin-top: 40px;
+    width: 100%;
+}
+.cate-inicio {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.category {
+    text-align: center;
+    
+}
+
+.category img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+p{
+    color: white;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+#ca{
+    margin-left: 200px;
+}
+
+ /*Recomendaciones */
+.recomend {
+    width: 80%;
+    margin: 0 auto; /* Centrar horizontalmente */
+    text-align: center; /* Centrar horizontalmente el contenido */
+}
+.recomend h1{
+    margin-top: 50px;
+    color: white;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.product-grid {
+    margin-top: 40px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.show-more {
+    margin-top: 40px;
+    background-color: #ff5a5f; /* Color rojo */
+    color: #ffffff; /* Color blanco */
+    border: none;
+    padding: 15px 30px; /* Aumenta el padding para hacer el botón más grande */
+    border-radius: 0; /* Elimina los bordes redondeados */
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transición de color suave */
+}
+
+.show-more:hover {
+    background-color: #8a0707; /* Color rojo vino más oscuro */
+}
+
+.premium {
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.premium-image {
+    position: relative;
+    width: 100%;
+}
+
+.premium-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.premium-info {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    width: 30%; /* Ajusta el ancho según sea necesario */
+    background-color: white; /* Ajusta la opacidad del fondo blanco */
+    border-radius: 10px;
+    padding: 70px;
+    transform: translateY(-50%);
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+
+.premium-info h2 {
+    margin-top: 30px;
+    color: #000000;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.premium-info p {
+    margin-top: 10px;
+    color: #000000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.premium-info button {
+    margin-top: 40px;
+    background-color: #ff5a5f; /* Color rojo */
+    color: #ffffff; /* Color blanco */
+    border: none;
+    padding: 15px 30px; /* Aumenta el padding para hacer el botón más grande */
+    border-radius: 0; /* Elimina los bordes redondeados */
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transición de color suave */
+
+}
+
+.premium-info button:hover {
+    background-color: #8a0707;
+}
+
+
+.ultimo {
+    padding: 3rem 10%; /* Agrega un relleno en los lados del 10% para centrar las tarjetas */
+    text-align: center;
+  }
+  
+  .grilla {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Las tarjetas ocuparán el 80% del ancho del body */
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+  }
+  
+  .tarjeta {
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0 0 2rem;
+    padding: 2rem;
+    text-align: center; /* Centra el contenido de la tarjeta horizontalmente */
+    color: white;
+}
+  
+.tarjeta img {
+    border-radius: 50%;
+    max-width: 12rem;
+    height: 12rem; /* Establecer una altura fija para que todas las imágenes tengan el mismo tamaño */
+    width: 100%;
+  }
+  
+  .ultimo h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+  }
+  
+  .tarjeta h4 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .tarjeta p {
+    font-size: 15px;
+    font-weight: normal;
+  }
+  
